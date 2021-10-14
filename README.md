@@ -10,7 +10,7 @@
 5. Run `npm run dev` to start the API on `http://localhost:5000`
 
 ### Production
-1. Currently the API is hosted at https://api-iitbhucybersecfronted.herokuapp.com/
+1. Currently the API is hosted at https://api-iitbhucybersec-main.herokuapp.com/
 2. Any pushes to the main branch of this repo will be reflected upon this URL
 3. `.env` is configured to use the IIT(BHU)CyberSec account of MongoDB
 
