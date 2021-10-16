@@ -16,7 +16,8 @@
     "express": "^4.17.1",
     "moment": "^2.29.1",
     "mongoose": "^6.0.2",
-    "showdown": "^1.9.1"
+    "showdown": "^1.9.1",
+    "showdown-emoji": "^2.0.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"

@@ -1,6 +1,7 @@
 const BlogPostModel = require("../models/post.js")
 const moment = require("moment")
 const showdown = require("showdown")
+const showdownEmoji = require("showdown-emoji")
 module.exports = {
     // FUNCTIONS WILL GO HERE
     getAllBlogPosts: function (callback) {
@@ -50,7 +51,9 @@ module.exports = {
             } else if (!post) {
                 callback({ notFoundError: true })
             } else {
-                const markdownConverter = new showdown.Converter()
+                const markdownConverter = new showdown.Converter({
+                    extensions: [showdownEmoji("https://github.githubassets.com/images/icons/emoji")]
+                })
                 post.markdownContent = markdownConverter.makeHtml(post.markdownContent)
 
                 callback({ success: true, post: post })
